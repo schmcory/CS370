@@ -1,0 +1,19 @@
+This program is an implementation of the TOTP algorithm which works with the Google Authenticator application. The program generates both a QR code and a one-time password based on options declared at runtime.  
+
+You can test the output of this program using the free Google Authenticator application by downloading it on iOS or Android stores. 
+
+To run this program, make sure you have Python 3 installed. This program is not designed to work with earlier versions of Python. 
+
+Required libraries: 
+	pyqrcode
+	pypng
+
+You can install these libraries locally by running the following commands (after Python 3 is installed):
+	pip3 install  pyqrcode (https://pypi.org/project/PyQRCode/#requirements)
+	pip3 install  pypng (https://pypi.org/project/pypng/)
+
+To run the program:
+	Generate QR code:
+		python3 submission.py --generate-qr 
+	Get OTP:
+		python3 submission.py --get-otp
